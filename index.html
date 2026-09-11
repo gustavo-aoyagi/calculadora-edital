@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- garante que acentos e caracteres especiais apareçam corretamente-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport ajuda na adaptação a celular-->
+    <title>.: TJSP-Gu :.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora Edital</h1>
+        
+        <p>Quantidade de caracteres: <span id="contador">0</span></p>
+        <p>Valor do edital: <span id="valorEdital">R$ 0,00</span></p>
+        
+        <textarea id="campoTexto" placeholder="Insira o conteúdo do Edital "></textarea>
+        
+        <button id="botaoLimpar" type="button">Limpar</button>
+        
+        <div class="ufesp">
+            Valor de R$ 0,31 por caractere (0,008 UFESP), conforme tabela do TJSP. <br>
+            Obs. Para o exercício de 2026, o valor da UFESP é de R$ 38,42. <br>
+            Consulte: <a href="https://www.tjsp.jus.br/IndicesTaxasJudiciarias/DespesasProcessuais/DespesasPublicacaoEditais" target="_blank" rel="noopener noreferrer">https://www.tjsp.jus.br/IndicesTaxasJudiciarias/DespesasProcessuais/DespesasPublicacaoEditais</a>
+        </div>
+        
+        <div class="aviso">
+            <strong>Última atualização: </strong> 10/09/2026
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script> <!--é colocado no final, para garantir que todo o html foi carregado antes do js rodar-->
+</body>
+
+</html>
