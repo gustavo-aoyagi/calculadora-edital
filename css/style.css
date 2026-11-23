@@ -68,18 +68,32 @@ button {
     
 }
 
+#botaoCopiar {
+    background-color: #60e07e;
+}
+
+#botaoCopiar:hover {
+    background-color: #1e7e34;
+}
+
 textarea {
     width: 100%;
     max-width: 900px;
-    height: 550px;
+    height: 400px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
     display: block;
+    resize: vertical;
     transition: border-color 0.3s ease, box-shadow 0.3 ease;
 }
+#textoAto {
+    height: 150px;
+    background-color: #f8f9fa;
+}
+
 textarea:focus {
     outline: none;
     border-color: #007bff;
@@ -89,6 +103,12 @@ textarea:focus {
 h1 {
     color: #333;
     font-size: 24px;
+}
+
+h2 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 25px;
 }
 
 p {

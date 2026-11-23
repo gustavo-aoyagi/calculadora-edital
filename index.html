@@ -17,15 +17,18 @@
         <textarea id="campoTexto" placeholder="Insira o conteúdo do Edital "></textarea>
         
         <button id="botaoLimpar" type="button">Limpar</button>
-        
+
+        <h2>Texto para ato ordinatório</h2>
+        <textarea id="textoAto" readonly placeholder="O texto será gerado automaticamente"></textarea>
+        <button id="botaoCopiar" type="button">Copiar texto</button>
+
         <div class="ufesp">
-            Valor de R$ 0,31 por caractere (0,008 UFESP), conforme tabela do TJSP. <br>
-            Obs. Para o exercício de 2026, o valor da UFESP é de R$ 38,42. <br>
+            Valor de <span id="precoPorCaractere"></span> por caractere (<span id="taxaUfesp"></span> UFESP) para o exercício de <span id="anoExercicio"></span>, conforme tabela do TJSP.<br>
             Consulte: <a href="https://www.tjsp.jus.br/IndicesTaxasJudiciarias/DespesasProcessuais/DespesasPublicacaoEditais" target="_blank" rel="noopener noreferrer">https://www.tjsp.jus.br/IndicesTaxasJudiciarias/DespesasProcessuais/DespesasPublicacaoEditais</a>
         </div>
         
         <div class="aviso">
-            <strong>Última atualização: </strong> 10/09/2026
+            <strong>Última atualização: </strong> <span id="infoAtualizacao"></span>
         </div>
     </div>
     
